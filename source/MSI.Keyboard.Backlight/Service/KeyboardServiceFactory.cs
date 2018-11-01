@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MSI.Keyboard.Backlight.Device;
+using MSI.Keyboard.Backlight.Utils;
 
 namespace MSI.Keyboard.Backlight.Service
 {
@@ -11,7 +12,8 @@ namespace MSI.Keyboard.Backlight.Service
     {
         public static IKeyboardService Create()
         {
-            var keyboardDevice = new HIDKeyboardDevice();
+            var colorEnumToRgbConverter = new ColorEnumToRgbConverter();
+            var keyboardDevice = new HIDKeyboardDevice(colorEnumToRgbConverter);
             return new KeyboardService(keyboardDevice);
         }
     }

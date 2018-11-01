@@ -11,7 +11,7 @@ namespace MSI.Keyboard.Backlight.Sample
         public static async Task Main(string[] args)
         {
             var configuration = BacklightConfigurationBuilderFactory.Create()
-                .ForAllRegions(BlinkingMode.Breathe)
+                .ForAllRegions(BlinkingMode.Normal)
                 .ForRegion(Region.Start, Color.Red, Intensity.High)
                 .ForRegion(Region.Center, Color.Green, Intensity.High)
                 .ForRegion(Region.End, Color.Blue, Intensity.High)
