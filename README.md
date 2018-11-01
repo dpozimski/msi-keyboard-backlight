@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/dpozimski/msi-keyboard-backlight/develop/images/logo.png"/>
+    <img src="https://raw.githubusercontent.com/dpozimski/msi-keyboard-backlight/develop/images/keyboard.png"/>
     <h1>msi-keyboard-backlight</h1>
 </div>
 
