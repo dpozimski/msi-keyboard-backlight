@@ -6,15 +6,23 @@
         <VersionPrefix>1.0.0</VersionPrefix>
         <AssemblyVersion>1.0.0</AssemblyVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>msi-keyboard-backlight</Title>
         <Authors>Damian Pozimski</Authors>
         <Company>SoftPower</Company>
         <RepositoryUrl>https://github.com/dpozimski/msi-keyboard-backlight</RepositoryUrl>
-        <Description>The .NET Framework package which allows to control the background of your MSI keyboard!</Description>
+        <Description>The .NET Framework package which allows to control the backlight of your MSI keyboard!</Description>
         <PackageLicenseUrl>https://github.com/dpozimski/msi-keyboard-backlight/blob/master/LICENSE</PackageLicenseUrl>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="hidlibrary" Version="3.2.46" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include=".\..\..\README.md">
+            <Pack>true</Pack>
+            <PackagePath>.\..\..\README.md</PackagePath>
+        </Content>
     </ItemGroup>
 
 </Project>
