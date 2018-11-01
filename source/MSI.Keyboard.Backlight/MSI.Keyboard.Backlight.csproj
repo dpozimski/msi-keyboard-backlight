@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
-        <Version>1.0.3</Version>
-        <VersionPrefix>1.0.3</VersionPrefix>
+        <Version>1.0.5</Version>
+        <VersionPrefix>1.0.5</VersionPrefix>
         <AssemblyVersion>1.0.0</AssemblyVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>msi-keyboard-backlight</Title>
@@ -12,6 +12,7 @@
         <RepositoryUrl>https://github.com/dpozimski/msi-keyboard-backlight</RepositoryUrl>
         <Description>The .NET Framework package which allows to control the backlight of your MSI keyboard!</Description>
         <PackageLicenseUrl>https://github.com/dpozimski/msi-keyboard-backlight/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/dpozimski/msi-keyboard-backlight/develop/images/keyboard.png</PackageIconUrl>
     </PropertyGroup>
 
     <ItemGroup>
