@@ -12,7 +12,7 @@
         <RepositoryUrl>https://github.com/dpozimski/msi-keyboard-backlight</RepositoryUrl>
         <Description>The .NET Framework package which allows to control the backlight of your MSI keyboard!</Description>
         <PackageLicenseUrl>https://github.com/dpozimski/msi-keyboard-backlight/blob/master/LICENSE</PackageLicenseUrl>
-        <PackageIconUrl>https://raw.githubusercontent.com/dpozimski/msi-keyboard-backlight/develop/images/logo.png</PackageIconUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/dpozimski/msi-keyboard-backlight/develop/images/keyboard.png</PackageIconUrl>
     </PropertyGroup>
 
     <ItemGroup>
