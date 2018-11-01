@@ -15,7 +15,6 @@
         DarkGreen = 0x0A,
         MidnightBlue = 0x0B,
         Rose = 0x1E,
-        Teal = 0x32,
-        Custom = 0x63
+        Teal = 0x32
     }
 }
