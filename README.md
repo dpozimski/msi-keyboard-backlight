@@ -2,6 +2,8 @@
 
 The C# package which allows to control the backlight of your MSI keyboard!
 
+[![Build status](https://damianpozimski.visualstudio.com/msi-keyboard-backlight/_apis/build/status/master_msi-keyboard-backlight)](https://damianpozimski.visualstudio.com/msi-keyboard-backlight/_build/latest?definitionId=11)
+
 # Description
 
 If you have a notebook from MSI with steel series keyboard you can control your keyboard directly from code!
