@@ -2,9 +2,9 @@
 {
     public enum Intensity
     {
-        High = 0x00,
-        Medium = 0x01,
-        Low = 0x02,
-        Light = 0x03,
+        High = 100,
+        Medium = 75,
+        Low = 50,
+        Light = 25,
     }
 }
