@@ -1,10 +1,13 @@
-# msi-keyboard-backlight
+<div align="center">
+    <img src="https://raw.githubusercontent.com/dpozimski/msi-keyboard-backlight/develop/images/logo.png"/>
+    <h1>msi-keyboard-backlight</h1>
+</div>
+
+# Description
 
 The C# package which allows to control the backlight of your MSI keyboard!
 
 [![Build status](https://damianpozimski.visualstudio.com/msi-keyboard-backlight/_apis/build/status/master_msi-keyboard-backlight)](https://damianpozimski.visualstudio.com/msi-keyboard-backlight/_build/latest?definitionId=11)
-
-# Description
 
 If you have a notebook from MSI with steel series keyboard you can control your keyboard directly from code!
 
@@ -32,7 +35,7 @@ Feel free to send some feature requests!
 public static async Task Main(string[] args)
 {
     var configuration = BacklightConfigurationBuilderFactory.Create()
-        .ForAllRegions(BlinkingMode.Breathe)
+        .ForAllRegions(BlinkingMode.Normal)
         .ForRegion(Region.Start, Color.Red, Intensity.High)
         .ForRegion(Region.Center, Color.Green, Intensity.High)
         .ForRegion(Region.End, Color.Blue, Intensity.High)
