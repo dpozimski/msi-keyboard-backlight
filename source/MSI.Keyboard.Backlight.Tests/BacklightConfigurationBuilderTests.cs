@@ -11,7 +11,6 @@ namespace MSI.Keyboard.Backlight.Tests
     {
         [Theory]
         [InlineData(Color.Blue, Intensity.High)]
-        [InlineData(Color.Custom, Intensity.Medium)]
         [InlineData(Color.Off, Intensity.High)]
         [InlineData(Color.White, Intensity.High)]
         public void ForAllRegions_Build_ShouldSetTheSameConfiguration(Color color, Intensity intensity)
@@ -47,7 +46,7 @@ namespace MSI.Keyboard.Backlight.Tests
 
         [Theory]
         [InlineData(Region.Start, Color.Blue, Intensity.High)]
-        [InlineData(Region.Center, Color.Custom, Intensity.Medium)]
+        [InlineData(Region.Center, Color.Green, Intensity.Medium)]
         [InlineData(Region.End, Color.Off, Intensity.High)]
         public void ForRegions_Build_ShouldSetConfigurationForSpecificRegion(Region region, Color color, Intensity intensity)
         {

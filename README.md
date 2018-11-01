@@ -1,4 +1,4 @@
-# <center>msi-keyboard-backlight</center>
+# msi-keyboard-backlight
 
 The C# package which allows to control the backlight of your MSI keyboard!
 
