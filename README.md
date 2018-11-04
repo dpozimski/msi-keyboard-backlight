@@ -41,8 +41,8 @@ public static async Task Main(string[] args)
         .ForRegion(Region.End, Color.Blue, Intensity.High)
         .Build();
 
-        var service = KeyboardServiceFactory.Create();
+    var service = KeyboardServiceFactory.Create();
 
-        await service.ApplyConfigurationAsync(configuration);
+    await service.ApplyConfigurationAsync(configuration);
 }
 ```
