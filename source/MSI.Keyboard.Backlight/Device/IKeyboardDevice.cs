@@ -14,9 +14,9 @@ namespace MSI.Keyboard.Backlight.Device
         /// </summary>
         /// <param name="region">The region of the keyboard</param>
         /// <param name="color">The color of the region's buttons</param>
-        /// <param name="intensity">The intensity of the color</param>
+        /// <param name="intensity">The intensity of the color. Range 0-100.</param>
         /// <exception cref="InvalidOperationException">Thrown when keyboard device not found</exception>
-        Task<bool> ChangeColorAsync(Region region, Color color, Intensity intensity);
+        Task<bool> ChangeColorAsync(Region region, System.Drawing.Color color, int intensity);
 
         /// <summary>
         /// Sets the mode of the leds blinking.

@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2046
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSI.Keyboard.Backlight", "source\MSI.Keyboard.Backlight\MSI.Keyboard.Backlight.csproj", "{49DECE8C-28AF-4461-9527-04AD7D0F005E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSI.Keyboard.Backlight.Tests", "source\MSI.Keyboard.Backlight.Tests\MSI.Keyboard.Backlight.Tests.csproj", "{C2764E90-E1A3-45D7-BC16-4A1DE42BC92C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSI.Keyboard.Backlight.Tests", "source\MSI.Keyboard.Backlight.Tests\MSI.Keyboard.Backlight.Tests.csproj", "{C2764E90-E1A3-45D7-BC16-4A1DE42BC92C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSI.Keyboard.Backlight.Sample", "source\MSI.Keyboard.Backlight.Sample\MSI.Keyboard.Backlight.Sample.csproj", "{8E6A2EEE-DE7A-4B3E-B205-2C4FC8D1FC1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSI.Keyboard.Backlight.SimpleAdjustmentSample", "source\MSI.Keyboard.Backlight.SimpleAdjustmentSample\MSI.Keyboard.Backlight.SimpleAdjustmentSample.csproj", "{8E6A2EEE-DE7A-4B3E-B205-2C4FC8D1FC1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSI.Keyboard.Backlight.SmoothAdjustmentSample", "source\MSI.Keyboard.Backlight.SmoothAdjustmentSample\MSI.Keyboard.Backlight.SmoothAdjustmentSample.csproj", "{4D874C88-7F60-4E79-98D7-7E43D9094FE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,22 @@ Global
 		{8E6A2EEE-DE7A-4B3E-B205-2C4FC8D1FC1F}.Release|x64.Build.0 = Release|Any CPU
 		{8E6A2EEE-DE7A-4B3E-B205-2C4FC8D1FC1F}.Release|x86.ActiveCfg = Release|Any CPU
 		{8E6A2EEE-DE7A-4B3E-B205-2C4FC8D1FC1F}.Release|x86.Build.0 = Release|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Debug|ARM.Build.0 = Debug|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Debug|x64.Build.0 = Debug|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Debug|x86.Build.0 = Debug|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Release|ARM.ActiveCfg = Release|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Release|ARM.Build.0 = Release|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Release|x64.ActiveCfg = Release|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Release|x64.Build.0 = Release|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D874C88-7F60-4E79-98D7-7E43D9094FE7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

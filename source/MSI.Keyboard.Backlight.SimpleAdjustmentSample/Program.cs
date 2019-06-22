@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MSI.Keyboard.Backlight.Configuration;
 using MSI.Keyboard.Backlight.Enums;
 using MSI.Keyboard.Backlight.Service;
@@ -13,8 +12,8 @@ namespace MSI.Keyboard.Backlight.Sample
             var configuration = BacklightConfigurationBuilderFactory.Create()
                 .ForAllRegions(BlinkingMode.Normal)
                 .ForRegion(Region.Start, Color.Red, Intensity.High)
-                .ForRegion(Region.Center, Color.Green, Intensity.High)
-                .ForRegion(Region.End, Color.Blue, Intensity.High)
+                .ForRegion(Region.Center, Color.Red, Intensity.High)
+                .ForRegion(Region.End, Color.Red, Intensity.High)
                 .Build();
 
             var service = KeyboardServiceFactory.Create();

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using AutoFixture;
 using AutoFixture.AutoNSubstitute;
@@ -39,7 +37,7 @@ namespace MSI.Keyboard.Backlight.Tests
             var fixture = new Fixture().Customize(new AutoNSubstituteCustomization());
             var configuration = fixture.Create<BacklightConfiguration>();
             var keyboardDevice = Substitute.For<IKeyboardDevice>();
-            keyboardDevice.ChangeColorAsync(Arg.Any<Region>(), Arg.Any<Color>(), Arg.Any<Intensity>()).Returns(false);
+            keyboardDevice.ChangeColorAsync(Arg.Any<Region>(), Arg.Any<System.Drawing.Color>(), Arg.Any<int>()).Returns(false);
             var keyboardService = new KeyboardService(keyboardDevice);
             //act
             Func<Task> fun = async () => { await keyboardService.ApplyConfigurationAsync(configuration); };
@@ -55,14 +53,14 @@ namespace MSI.Keyboard.Backlight.Tests
             var fixture = new Fixture().Customize(new AutoNSubstituteCustomization());
             var configuration = fixture.Create<BacklightConfiguration>();
             var keyboardDevice = Substitute.For<IKeyboardDevice>();
-            keyboardDevice.ChangeColorAsync(Arg.Any<Region>(), Arg.Any<Color>(), Arg.Any<Intensity>()).Returns(true);
+            keyboardDevice.ChangeColorAsync(Arg.Any<Region>(), Arg.Any<System.Drawing.Color>(), Arg.Any<int>()).Returns(true);
             keyboardDevice.ChangeModeAsync(Arg.Any<BlinkingMode>()).Returns(true);
             var keyboardService = new KeyboardService(keyboardDevice);
             //act
             await keyboardService.ApplyConfigurationAsync(configuration);
             //asert
             await keyboardDevice.Received()
-                .ChangeColorAsync(Arg.Any<Region>(), Arg.Any<Color>(), Arg.Any<Intensity>());
+                .ChangeColorAsync(Arg.Any<Region>(), Arg.Any<System.Drawing.Color>(), Arg.Any<int>());
         }
 
         [Fact]
@@ -72,7 +70,7 @@ namespace MSI.Keyboard.Backlight.Tests
             var fixture = new Fixture().Customize(new AutoNSubstituteCustomization());
             var configuration = fixture.Create<BacklightConfiguration>();
             var keyboardDevice = Substitute.For<IKeyboardDevice>();
-            keyboardDevice.ChangeColorAsync(Arg.Any<Region>(), Arg.Any<Color>(), Arg.Any<Intensity>()).Returns(true);
+            keyboardDevice.ChangeColorAsync(Arg.Any<Region>(), Arg.Any<System.Drawing.Color>(), Arg.Any<int>()).Returns(true);
             keyboardDevice.ChangeModeAsync(Arg.Any<BlinkingMode>()).Returns(true);
             var keyboardService = new KeyboardService(keyboardDevice);
             //act
@@ -104,7 +102,7 @@ namespace MSI.Keyboard.Backlight.Tests
             var fixture = new Fixture().Customize(new AutoNSubstituteCustomization());
             var configuration = fixture.Create<BacklightConfiguration>();
             var keyboardDevice = Substitute.For<IKeyboardDevice>();
-            keyboardDevice.ChangeColorAsync(Arg.Any<Region>(), Arg.Any<Color>(), Arg.Any<Intensity>()).Returns(true);
+            keyboardDevice.ChangeColorAsync(Arg.Any<Region>(), Arg.Any<System.Drawing.Color>(), Arg.Any<int>()).Returns(true);
             keyboardDevice.ChangeModeAsync(Arg.Any<BlinkingMode>()).Returns(true);
             var keyboardService = new KeyboardService(keyboardDevice);
             //act
