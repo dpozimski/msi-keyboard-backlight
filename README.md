@@ -29,6 +29,17 @@ Currently the project is tested only on Windows operating system.
 
 Feel free to send some feature requests!
 
+# Changelog
+
+v1.0.6
+
+* Setting RGB value to each region
+* Setting intensity level to each region (0-100)
+
+v1.0.5
+
+* Initial public release
+
 # Sample
 
 ```csharp

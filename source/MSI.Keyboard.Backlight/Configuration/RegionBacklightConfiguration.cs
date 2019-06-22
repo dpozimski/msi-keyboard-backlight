@@ -4,10 +4,10 @@ namespace MSI.Keyboard.Backlight.Configuration
 {
     public class RegionBacklightConfiguration
     {
-        public Color Color { get; }
-        public Intensity Intensity { get; }
+        public System.Drawing.Color Color { get; }
+        public int Intensity { get; }
 
-        public RegionBacklightConfiguration(Color color, Intensity intensity)
+        public RegionBacklightConfiguration(System.Drawing.Color color, int intensity)
         {
             Color = color;
             Intensity = intensity;

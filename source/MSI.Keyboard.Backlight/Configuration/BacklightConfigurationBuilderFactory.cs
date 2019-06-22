@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MSI.Keyboard.Backlight.Utils;
 
 namespace MSI.Keyboard.Backlight.Configuration
 {
@@ -10,7 +6,8 @@ namespace MSI.Keyboard.Backlight.Configuration
     {
         public static IBacklightConfigurationBuilder Create()
         {
-            return new BacklightConfigurationBuilder();
+            var colorEnumToRgbConverter = new ColorEnumToRgbConverter();
+            return new BacklightConfigurationBuilder(colorEnumToRgbConverter);
         }
     }
 }

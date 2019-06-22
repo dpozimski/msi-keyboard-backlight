@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MSI.Keyboard.Backlight.Enums;
+﻿using MSI.Keyboard.Backlight.Enums;
 
 namespace MSI.Keyboard.Backlight.Configuration
 {
@@ -11,8 +6,10 @@ namespace MSI.Keyboard.Backlight.Configuration
     {
         IBacklightConfigurationBuilder ForAllRegions(BlinkingMode blinkingMode);
         IBacklightConfigurationBuilder ForAllRegions(Color color, Intensity intensity);
+        IBacklightConfigurationBuilder ForAllRegions(System.Drawing.Color color, int intensity);
         IBacklightConfigurationBuilder ForRegion(Region region, Color color, Intensity intensity);
-        
+        IBacklightConfigurationBuilder ForRegion(Region region, System.Drawing.Color color, int intensity);
+
         BacklightConfiguration Build();
     }
 }
