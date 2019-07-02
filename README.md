@@ -40,7 +40,7 @@ v1.0.5
 
 * Initial public release
 
-# Sample
+# Simple adjustment sample
 
 ```csharp
 public static async Task Main(string[] args)
@@ -53,6 +53,21 @@ public static async Task Main(string[] args)
         .Build();
 
     var service = KeyboardServiceFactory.Create();
+
+    await service.ApplyConfigurationAsync(configuration);
+}
+```
+
+# Smooth adjustment sample
+
+```csharp
+public static async Task Main(string[] args)
+{
+    var random = new Random();
+    var service = KeyboardServiceFactory.Create();
+    var configuration = BacklightConfigurationBuilderFactory.Create()
+        .ForAllRegions(color: System.Drawing.Color.Red, intensity: random.Next(0, 100))
+        .Build();
 
     await service.ApplyConfigurationAsync(configuration);
 }
