@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using MSI.Keyboard.Backlight.Configuration;
 using MSI.Keyboard.Backlight.Device;
@@ -25,6 +23,11 @@ namespace MSI.Keyboard.Backlight.Service
             await ApplyRegionConfigurations(configuration.RegionConfigurations);
 
             _currentConfiguration = configuration;
+        }
+
+        public bool IsDeviceSupported()
+        {
+            return _keyboardDevice.IsDeviceSupported();
         }
 
         public BacklightConfiguration GetCurrentConfiguration()

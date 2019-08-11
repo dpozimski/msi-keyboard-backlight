@@ -31,6 +31,10 @@ Feel free to send some feature requests!
 
 # Changelog
 
+v1.0.7
+
+* Added IsDeviceSupported check to IKeyboardService
+
 v1.0.6
 
 * Setting RGB value to each region

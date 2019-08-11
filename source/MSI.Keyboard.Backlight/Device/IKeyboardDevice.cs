@@ -19,6 +19,12 @@ namespace MSI.Keyboard.Backlight.Device
         Task<bool> ChangeColorAsync(Region region, System.Drawing.Color color, int intensity);
 
         /// <summary>
+        /// Checks if the current device is supported.
+        /// </summary>
+        /// <returns>Device is supported</returns>
+        bool IsDeviceSupported();
+
+        /// <summary>
         /// Sets the mode of the leds blinking.
         /// </summary>
         /// <param name="blinkingMode">The specific blinking effect</param>

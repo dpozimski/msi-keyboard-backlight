@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
-        <VersionPrefix>1.0.6</VersionPrefix>
+        <VersionPrefix>1.0.7</VersionPrefix>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>msi-keyboard-backlight</Title>
         <Authors>Damian Pozimski</Authors>
