@@ -21,5 +21,11 @@ namespace MSI.Keyboard.Backlight.Service
         /// <exception cref="InvalidProgramException">If unrecognized IO exception occured</exception>
         /// <param name="configuration">Configuration of backlight</param>
         Task ApplyConfigurationAsync(BacklightConfiguration configuration);
+
+        /// <summary>
+        /// Checks if the current device is supported.
+        /// </summary>
+        /// <returns>Device is supported</returns>
+        bool IsDeviceSupported();
     }
 }

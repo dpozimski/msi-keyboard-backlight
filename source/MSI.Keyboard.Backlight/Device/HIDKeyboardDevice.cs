@@ -44,6 +44,12 @@ namespace MSI.Keyboard.Backlight.Device
             });
         }
 
+        public bool IsDeviceSupported()
+        {
+            var device = GetHidDevice();
+            return device != null;
+        }
+
         private Task<bool> SendCommandAsync(IEnumerable<byte> data)
         {
             var device = GetHidDevice();

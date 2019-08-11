@@ -84,8 +84,6 @@ namespace MSI.Keyboard.Backlight.Tests
         public void GetCurrentConfiguration_IfConfigurationNotApplied_ShouldBeNull()
         {
             //arrange
-            var fixture = new Fixture().Customize(new AutoNSubstituteCustomization());
-            var configuration = fixture.Create<BacklightConfiguration>();
             var keyboardDevice = Substitute.For<IKeyboardDevice>();
             var keyboardService = new KeyboardService(keyboardDevice);
             //act
