@@ -31,6 +31,11 @@ Feel free to send some feature requests!
 
 # Changelog
 
+v1.0.8
+
+* Support for netstandard 2.1
+* Upgrade dependencies
+
 v1.0.7
 
 * Added IsDeviceSupported check to IKeyboardService
