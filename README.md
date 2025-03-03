@@ -17,7 +17,7 @@ My idea was to use this library to set the keyboard backlight depends of windows
 
 I was inspired to create library by watching this video https://www.youtube.com/watch?v=z_ESTHVDSSQ.
 
-# Support
+# Support123
 
 My library use https://github.com/mikeobrien/HidLibrary package to get the handler to keyboard which allows me to write input data directly to device.
 
